@@ -1,0 +1,5 @@
+[29-Jul-2017 00:31:14 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/global/functions_overview.php on line 42
+[29-Jul-2017 00:31:14 UTC] PHP Stack trace:
+[29-Jul-2017 00:31:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/adm/specialty/edit_specialty_process.php:0
+[29-Jul-2017 00:31:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/adm/specialty/edit_specialty_process.php:53
+[29-Jul-2017 00:31:14 UTC] PHP   3. get_dssc_today_stats() /home/ubuntu/workspace/adm/templates/top.php:86

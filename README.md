@@ -1,6 +1,8 @@
-## Project Name: NAF Recruitment System
+## Project Name: 
+NAF Recruitment System
 
-## Version: 0.1
+## Version: 
+0.1
 
 ## Developers: 
 Work Force Development Students, TCC, Tallahasse, Florida Apr - Aug 2017 
@@ -9,4 +11,4 @@ Work Force Development Students, TCC, Tallahasse, Florida Apr - Aug 2017
 The admin dashboard for management of recruitment exercises in the NAF.
 Repository No 1.
 
-## View Project:
+## View Project: https://github.com/saadyakubu/nafrec.git

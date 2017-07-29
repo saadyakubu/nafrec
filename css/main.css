@@ -1,0 +1,315 @@
+html,body {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+/*Styling of the Site's logo*/
+.img-logo{
+    width:5em; 
+    height:4em;
+    padding-left: 2%;
+}
+
+/*Styling and animation of the background*/
+#background-carousel{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.carousel,
+.carousel-inner {
+	width:100%;
+	height:100%;
+	z-index:0;
+	overflow:hidden;
+}
+.item {
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	z-index:0;
+}
+
+/*Styling the motto of the NAF and the title of the web app*/
+.site-motto,.site-title{ color:white; font-size:2.9em; /*40px*/}
+.site-motto{
+    text-align: center;
+}
+ /*The contents of the entire body falls in the wrapper less the footer*/
+#page-content-wrapper {
+	position:absolute;
+/*	z-index:1;*/
+	min-width:100%;
+	min-height:100%;
+    padding-top: 7%;
+    
+    /*makes the page content scrollable*/
+    /*overflow-y: auto;*/
+    top: 5%;
+    bottom: 8%;  
+}
+
+/*Make the background of the main menu transparent*/
+/*.navbar-fixed-top{*/
+.top-main-menu {  
+  background:transparent !important;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+  margin-right: 1%;
+  font-size: 150%;
+  
+    
+  /*Additional styling to display the transparent menu even on overlay*/
+  display: inline;
+  position: absolute;
+  z-index:50000 !important;
+}
+
+
+/*Make the menu icons white to adapt to any screen*/
+.navbar-topright-items li a{
+    color: white !important; 
+}
+
+/*When you hover on the menu icon, show the border bottom*/
+.navbar-topright-items li a:hover{
+    opacity: .7;
+    border-bottom: 2px solid white;
+}
+
+/*When the search menu is pressed, display the search bar*/
+.dropdown-menu{
+    float: left;
+    margin-left: -80px;
+    width: 550%;
+    border-style: none;
+}
+
+#searchText{
+    border-left:none; /*Allow the search icon to be displayed and blend with the textbox (seemlessly)*/
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);  
+}
+
+.transparent-search-icon {
+    background-color: transparent !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+ }
+
+
+/*Styling of the menu display when menu icon is pressed*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    opacity:1.5;
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:100%; right: 0; 
+    top: 0; bottom: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    /*overflow-x: hidden; /* Disable horizontal scroll */
+    overflow: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+/*    top: 20%;*/
+}
+
+/* Position the content inside the overlay */
+.overlay div {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* 100% width     
+    /*text-align: center; /* Centered text/links *
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay .overlaylisting:hover{
+    opacity: .7;
+}
+
+.overlay .menuitemcontent{
+    padding-top: 45%; /* display content of each section 45% from the top */
+    overflow: hidden;
+}
+
+.overlay .menuitemcontent ul{
+    padding-left: 5px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.overlay .menuitemcontent ul li{
+    font-size: 1.3em;
+    padding: 5px 2px;
+    margin-top: 0;
+    margin-left: 0;
+    color:snow;
+}
+
+.overlay .menuitemcontent ul li:hover{
+    font-style: italic;
+    font-size: 1.2em;
+    border-left:1px solid #dadada;
+    border-bottom:1px solid #dadada;
+    cursor: pointer;
+    color:dimgray;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {    
+    padding: 8px;
+    text-decoration: none;
+    font-size: 34px;
+    color: white;/*color: /*#818181;*/
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: white;/*#f1f1f1;*/
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* Position the menu button (top left corner) */
+.overlay .menu-menubtn {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 60px;
+}
+
+
+/*Styling the Disclaimer section of the site*/
+blockquote{
+    border-left:none;
+}
+
+.quote-box{    
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    margin-left: 10%;
+    opacity: 0.8;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color:white;
+    width: 80%;  
+/*    box-shadow: 2px 2px 2px 2px #E0E0E0;    */
+}
+
+.quotation-mark{    
+/*    margin-top: .1%;*/
+    font-weight: bold;
+    font-size:3em;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif; 
+    height: .5em;
+}
+
+
+.quote-text{    
+    font-size: 19px;
+    margin-top: -2%;
+    margin-left: 5%;
+    color:dimgray;
+    border-bottom: 1px solid white;   
+    opacity: 1;
+}
+
+.quoter{
+    margin-top: 1px;
+    float: right;
+    font-size: 1em;
+}
+
+
+/*Styling for the footer*/
+footer{
+    background-color: #424558;
+/*    position: fixed;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;/*35px;*/
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 5px;
+    margin: 0px;
+    line-height: 100%;
+}
+
+footer .footer-links{
+    padding-bottom: 1%;
+}
+
+/*Styling for the social media icons*/
+footer .social-media-btns .fa{
+    padding: 12px;   /*5px*/
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    width: 4%;
+    font-size: 1.2em;
+}
+
+/* Add a hover effect to the social media icons */
+footer .social-media-btns .fa:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* responsive footer fix by Aalaap Ghag */
+@media (max-width: 767px) {
+            footer, .wrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+
