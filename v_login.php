@@ -72,7 +72,7 @@
         //verify result set returned, based upon matched $username_v and $userpswd_v
         if($result)
         {
-            $_SESSION['uid'] = $result['username']; //store user session value
+            $_SESSION['uid'] = $result['role']; //store user session value
             //navigate to various directories based on different roles (DIT and DRRR)
 
             if($result['role'] == 'Admin1')
@@ -86,7 +86,15 @@
         }
         else
         {
-            echo "Incorrect Username or Password. <br/> Please <a href='login.php'>login</a>";
+            //echo "Incorrect Username or Password. <br/> Please <a href='/login.php'>login</a>";
+            $error = "Incorrect Username or Password. Please try again with the correct details.";
+            //include("global/error.php");
+        ?>
+        
+            <div id="errormsg"  align="center">
+                <span class="panel-header btn-danger">   <?php echo $error; ?> </span>
+            </div>
+        <?php            
         }        
     }
 ?>

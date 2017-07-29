@@ -11,4 +11,4 @@ Work Force Development Students, TCC, Tallahasse, Florida Apr - Aug 2017
 The admin dashboard for management of recruitment exercises in the NAF.
 Repository No 1.
 
-## View Project: https://github.com/saadyakubu/nafrec.git
+## View Project: https://saadyakubu.github.io/nafrec/
